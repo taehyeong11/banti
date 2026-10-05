@@ -395,6 +395,7 @@ textarea:focus{
 }
 
 .printing-fields{
+  display:none;
   padding:4px 15px 10px;
   border-radius:12px;
   background:#fff6f6;
@@ -892,7 +893,6 @@ textarea:focus{
           <div
             id="printingFields"
             class="printing-fields"
-            hidden
           >
 
             <label>
@@ -1045,7 +1045,11 @@ textarea:focus{
 
           <ul>
 
-            
+            <li>
+              단체할인가는
+              <strong>10벌 이상</strong>
+              부터 적용됩니다.
+            </li>
 
             <li>
               측정 방법에 따라
@@ -1164,21 +1168,19 @@ const printingFields =
 
 
 /*
-  프린팅 여부에 따라
-  개인별명 / 개인번호 입력란만 표시합니다.
-
-  기존의 "프린팅 선택 시 요청사항 필수" 기능은
-  완전히 제거했습니다.
+  프린팅 여부 선택에 따른 입력창 표시/숨김 처리
 */
-
 printing.addEventListener("change", () => {
-
-  const isPrinting =
-    printing.value === "있음";
-
-  printingFields.hidden =
-    !isPrinting;
-
+  if (printing.value === "있음") {
+    printingFields.style.display = "block";
+  } else {
+    printingFields.style.display = "none";
+    // "없음"으로 재변경 시 기존 입력 내용 초기화
+    const nicknameInput = printingFields.querySelector("input[name='nickname']");
+    const numberInput = printingFields.querySelector("input[name='number']");
+    if (nicknameInput) nicknameInput.value = "";
+    if (numberInput) numberInput.value = "";
+  }
 });
 
 
@@ -1249,8 +1251,7 @@ form.addEventListener("submit", async (event) => {
 
     event.target.reset();
 
-    printingFields.hidden =
-      true;
+    printingFields.style.display = "none";
 
 
   } catch(error) {
