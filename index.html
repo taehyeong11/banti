@@ -401,6 +401,10 @@ textarea:focus{
   background:#fff6f6;
 }
 
+.printing-fields label{
+  margin:16px 0;
+}
+
 .submit-btn{
   width:100%;
   border:0;
@@ -649,7 +653,7 @@ textarea:focus{
 </section>
 
 
-<section id="printing">
+<section id="printingGuide">
   <div class="container">
 
     <div class="section-head">
@@ -882,7 +886,7 @@ textarea:focus{
           <label>
             프린팅 여부 <span>*</span>
 
-            <select name="printing" id="printing" required>
+            <select name="printing" id="printingOption" required>
               <option value="">선택해주세요</option>
               <option value="없음">없음</option>
               <option value="있음">있음</option>
@@ -900,50 +904,40 @@ textarea:focus{
 
               <input
                 name="nickname"
-                <div
-  id="printingFields"
-  class="printing-fields"
->
-
-  <label>
-    개인별명
-
-    <input
-      name="nickname"
-      type="text"
-      placeholder="이름 또는 별명 (예: 태형, TAEHYUNG)"
-    >
-  </label>
+                type="text"
+                placeholder="이름 또는 별명 (예: 태형, TAEHYUNG)"
+              >
+            </label>
 
 
-  <label>
-    개인번호
+            <label>
+              개인번호
 
-    <input
-      name="number"
-      type="text"
-      inputmode="numeric"
-      placeholder="숫자 등번호 (예: 15)"
-    >
-  </label>
-
-
-  <label>
-    프린팅 문구
-
-    <input
-      name="printingText"
-      type="text"
-      placeholder="프린팅할 문구를 입력해주세요."
-    >
-  </label>
+              <input
+                name="number"
+                type="text"
+                inputmode="numeric"
+                placeholder="숫자 등번호 (예: 15)"
+              >
+            </label>
 
 
-  <p class="form-help">
-    개인별명 +2,000원 / 개인번호 +3,000원
-  </p>
+            <label>
+              프린팅 문구
 
-</div>
+              <input
+                name="printingText"
+                type="text"
+                placeholder="프린팅할 문구를 입력해주세요."
+              >
+            </label>
+
+
+            <p class="form-help">
+              개인별명 +2,000원 / 개인번호 +3,000원
+            </p>
+
+          </div>
 
 
           <label>
@@ -1182,7 +1176,7 @@ const form =
   document.getElementById("orderForm");
 
 const printing =
-  document.getElementById("printing");
+  document.getElementById("printingOption");
 
 const printingFields =
   document.getElementById("printingFields");
@@ -1192,16 +1186,44 @@ const printingFields =
   프린팅 여부 선택에 따른 입력창 표시/숨김 처리
 */
 printing.addEventListener("change", () => {
+
   if (printing.value === "있음") {
+
     printingFields.style.display = "block";
+
   } else {
+
     printingFields.style.display = "none";
-    // "없음"으로 재변경 시 기존 입력 내용 초기화
-    const nicknameInput = printingFields.querySelector("input[name='nickname']");
-    const numberInput = printingFields.querySelector("input[name='number']");
-    if (nicknameInput) nicknameInput.value = "";
-    if (numberInput) numberInput.value = "";
+
+    const nicknameInput =
+      printingFields.querySelector(
+        "input[name='nickname']"
+      );
+
+    const numberInput =
+      printingFields.querySelector(
+        "input[name='number']"
+      );
+
+    const printingTextInput =
+      printingFields.querySelector(
+        "input[name='printingText']"
+      );
+
+    if (nicknameInput) {
+      nicknameInput.value = "";
+    }
+
+    if (numberInput) {
+      numberInput.value = "";
+    }
+
+    if (printingTextInput) {
+      printingTextInput.value = "";
+    }
+
   }
+
 });
 
 
@@ -1214,6 +1236,7 @@ form.addEventListener("submit", async (event) => {
     event.target.querySelector(
       "button[type='submit']"
     );
+
 
   const status =
     document.getElementById("formStatus");
@@ -1228,14 +1251,17 @@ form.addEventListener("submit", async (event) => {
   data.product =
     "바르셀로나 #745A";
 
+
   data.submittedAt =
     new Date().toISOString();
 
 
   button.disabled = true;
 
+
   status.textContent =
     "주문서를 전송하고 있습니다...";
+
 
   status.style.color =
     "#333";
@@ -1260,6 +1286,7 @@ form.addEventListener("submit", async (event) => {
     status.textContent =
       "주문서가 제출되었습니다. 이제 입금 안내의 계좌로 입금해주세요.";
 
+
     status.style.color =
       "#16803c";
 
@@ -1279,6 +1306,7 @@ form.addEventListener("submit", async (event) => {
 
     status.textContent =
       "전송에 실패했습니다. 관리자에게 문의해주세요.";
+
 
     status.style.color =
       "#d33";
