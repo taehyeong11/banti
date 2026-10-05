@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -5,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>일산양일중 3학년 15반 반티 사이트</title>
 <meta name="description" content="바르셀로나 745A 긴팔 반티 구입 안내">
+
 <style>
 :root{
   --pink:#ff9fa3;
@@ -15,8 +17,11 @@
   --line:#e7e7e7;
   --white:#fff;
 }
+
 *{box-sizing:border-box}
+
 html{scroll-behavior:smooth}
+
 body{
   margin:0;
   font-family:"Pretendard","Noto Sans KR","Malgun Gothic",sans-serif;
@@ -24,162 +29,489 @@ body{
   background:#fafafa;
   line-height:1.6;
 }
+
 a{color:inherit}
-.container{width:min(1120px,92%);margin:0 auto}
+
+.container{
+  width:min(1120px,92%);
+  margin:0 auto;
+}
+
 header{
-  position:sticky;top:0;z-index:20;
+  position:sticky;
+  top:0;
+  z-index:20;
   background:rgba(255,255,255,.94);
   backdrop-filter:blur(10px);
   border-bottom:1px solid var(--line);
 }
+
 .nav{
-  height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px;
+  height:68px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
 }
-.logo{font-size:20px;font-weight:900;letter-spacing:-.04em}
-.navlinks{display:flex;gap:22px;font-size:14px;font-weight:700}
+
+.logo{
+  font-size:20px;
+  font-weight:900;
+  letter-spacing:-.04em;
+}
+
+.navlinks{
+  display:flex;
+  gap:22px;
+  font-size:14px;
+  font-weight:700;
+}
+
 .navlinks a{text-decoration:none}
+
 .hero{
   background:linear-gradient(135deg,#fff 0%,#fff7f7 60%,#ffe8e9 100%);
   padding:72px 0 58px;
 }
+
 .hero-grid{
-  display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:48px;
+  align-items:center;
 }
+
 .badge{
-  display:inline-flex;padding:7px 12px;border-radius:999px;
-  background:#17233d;color:#fff;font-size:13px;font-weight:800;
+  display:inline-flex;
+  padding:7px 12px;
+  border-radius:999px;
+  background:#17233d;
+  color:#fff;
+  font-size:13px;
+  font-weight:800;
 }
-h1{font-size:clamp(34px,5vw,60px);line-height:1.08;margin:18px 0 16px;letter-spacing:-.055em}
-.subtitle{font-size:18px;color:#626772;margin:0 0 24px}
-.price{display:flex;align-items:end;gap:13px;flex-wrap:wrap;margin:18px 0}
-.price del{font-size:20px;color:#9a9a9a}
-.price strong{font-size:48px;line-height:1;color:#111}
-.price span{color:#16a34a;font-weight:900;font-size:19px}
+
+h1{
+  font-size:clamp(34px,5vw,60px);
+  line-height:1.08;
+  margin:18px 0 16px;
+  letter-spacing:-.055em;
+}
+
+.subtitle{
+  font-size:18px;
+  color:#626772;
+  margin:0 0 24px;
+}
+
+.price{
+  display:flex;
+  align-items:end;
+  gap:13px;
+  flex-wrap:wrap;
+  margin:18px 0;
+}
+
+.price del{
+  font-size:20px;
+  color:#9a9a9a;
+}
+
+.price strong{
+  font-size:48px;
+  line-height:1;
+  color:#111;
+}
+
+.notice{
+  margin-top:22px;
+  padding:14px 16px;
+  border-left:5px solid var(--pink);
+  background:#fff;
+  border-radius:10px;
+  font-weight:700;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:14px 20px;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:900;
+}
+
+.btn-primary{
+  background:var(--navy);
+  color:#fff;
+}
+
+.btn-outline{
+  border:1px solid #ccd1da;
+  background:#fff;
+}
+
 .hero-card{
-  background:#fff;border-radius:26px;padding:16px;
+  background:#fff;
+  border-radius:26px;
+  padding:16px;
   box-shadow:0 20px 55px rgba(23,35,61,.12);
 }
-.hero-card img{width:100%;display:block;border-radius:18px}
-.notice{
-  margin-top:22px;padding:14px 16px;border-left:5px solid var(--pink);
-  background:#fff;border-radius:10px;font-weight:700;
+
+.hero-card img{
+  width:100%;
+  display:block;
+  border-radius:18px;
 }
-.btn{
-  display:inline-flex;align-items:center;justify-content:center;
-  padding:14px 20px;border-radius:12px;text-decoration:none;font-weight:900;
-}
-.btn-primary{background:var(--navy);color:#fff}
-.btn-outline{border:1px solid #ccd1da;background:#fff}
+
 section{padding:74px 0}
+
 .section-head{margin-bottom:30px}
-.eyebrow{font-size:13px;font-weight:900;color:#e45c65;letter-spacing:.08em}
-h2{font-size:34px;line-height:1.2;margin:7px 0 10px;letter-spacing:-.04em}
-.section-desc{color:var(--muted);margin:0}
+
+.eyebrow{
+  font-size:13px;
+  font-weight:900;
+  color:#e45c65;
+  letter-spacing:.08em;
+}
+
+h2{
+  font-size:34px;
+  line-height:1.2;
+  margin:7px 0 10px;
+  letter-spacing:-.04em;
+}
+
+.section-desc{
+  color:var(--muted);
+  margin:0;
+}
+
 .options{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:18px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
 }
+
 .option{
-  background:#fff;border:1px solid var(--line);border-radius:18px;padding:25px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:25px;
 }
-.option .num{font-size:13px;font-weight:900;color:#e45c65}
-.option h3{font-size:21px;margin:8px 0}
-.option .plus{font-size:27px;font-weight:950}
-.option p{margin:8px 0 0;color:#666}
+
+.option .num{
+  font-size:13px;
+  font-weight:900;
+  color:#e45c65;
+}
+
+.option h3{
+  font-size:21px;
+  margin:8px 0;
+}
+
+.option .plus{
+  font-size:27px;
+  font-weight:950;
+}
+
+.option p{
+  margin:8px 0 0;
+  color:#666;
+}
+
 .info{
-  background:#17233d;color:#fff;border-radius:28px;padding:34px;
+  background:#17233d;
+  color:#fff;
+  border-radius:28px;
+  padding:34px;
 }
-.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-.info ul{margin:0;padding-left:20px}
+
+.info-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:28px;
+}
+
+.info ul{
+  margin:0;
+  padding-left:20px;
+}
+
 .info li{margin:7px 0}
+
 .size-wrap{
-  background:#fff;border:1px solid var(--line);border-radius:22px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:22px;
   overflow:hidden;
 }
-table{width:100%;border-collapse:collapse}
-th,td{padding:15px 12px;text-align:center;border-bottom:1px solid #eee}
-th{background:#ffe4e5;font-weight:900}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+th,td{
+  padding:15px 12px;
+  text-align:center;
+  border-bottom:1px solid #eee;
+}
+
+th{
+  background:#ffe4e5;
+  font-weight:900;
+}
+
 tr:last-child td{border-bottom:0}
+
 .highlight{font-weight:950}
+
 .note-box{
-  margin-top:20px;background:var(--pink-light);border-radius:18px;padding:20px;
+  margin-top:20px;
+  background:var(--pink-light);
+  border-radius:18px;
+  padding:20px;
 }
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+
+.steps{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
 .step{
-  background:#fff;border-radius:18px;padding:24px;border:1px solid var(--line);
+  background:#fff;
+  border-radius:18px;
+  padding:24px;
+  border:1px solid var(--line);
 }
+
 .step-num{
-  width:40px;height:40px;border-radius:50%;display:grid;place-items:center;
-  background:var(--pink);color:#fff;font-weight:950;margin-bottom:13px;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:var(--pink);
+  color:#fff;
+  font-weight:950;
+  margin-bottom:13px;
 }
+
 .visual{
-  background:#fff;border:1px solid var(--line);border-radius:22px;padding:12px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:12px;
   margin-top:22px;
 }
-.visual img{width:100%;display:block;border-radius:13px}
-.caution{background:#fff8e6;border:1px solid #f4dfaa;border-radius:18px;padding:24px}
+
+.visual img{
+  width:100%;
+  display:block;
+  border-radius:13px;
+}
+
+.caution{
+  background:#fff8e6;
+  border:1px solid #f4dfaa;
+  border-radius:18px;
+  padding:24px;
+}
+
 .caution li{margin:8px 0}
-footer{background:#111827;color:#d8dce5;padding:38px 0}
+
+footer{
+  background:#111827;
+  color:#d8dce5;
+  padding:38px 0;
+}
+
 footer strong{color:#fff}
-.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-@media(max-width:800px){
-  .navlinks{display:none}
-  .hero{padding:45px 0}
-  .hero-grid,.info-grid{grid-template-columns:1fr}
-  .options,.steps{grid-template-columns:1fr}
-  section{padding:52px 0}
-  h2{font-size:29px}
-  .price strong{font-size:40px}
-  th,td{font-size:13px;padding:11px 6px}
+
+.footer-row{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  flex-wrap:wrap;
 }
 
-.order-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:22px;margin-top:30px}
-.form-card,.payment-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px}
-.form-card h3,.payment-card h3{margin-top:0;font-size:24px}
-.form-help{color:#737783;font-size:14px}
-form label{display:block;font-weight:800;margin:16px 0}
+.order-grid{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:22px;
+  margin-top:30px;
+}
+
+.form-card,
+.payment-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:28px;
+}
+
+.form-card h3,
+.payment-card h3{
+  margin-top:0;
+  font-size:24px;
+}
+
+.form-help{
+  color:#737783;
+  font-size:14px;
+}
+
+form label{
+  display:block;
+  font-weight:800;
+  margin:16px 0;
+}
+
 form label>span{color:#e45c65}
-input,select,textarea{
-  display:block;width:100%;margin-top:7px;padding:13px 14px;
-  border:1px solid #d8dbe2;border-radius:10px;background:#fff;
-  font:inherit;color:var(--text);outline:none
-}
-input:focus,select:focus,textarea:focus{border-color:var(--pink);box-shadow:0 0 0 3px rgba(255,159,163,.16)}
-.printing-fields{padding:4px 15px 10px;border-radius:12px;background:#fff6f6}
-.submit-btn{
-  width:100%;border:0;border-radius:12px;padding:15px;
-  background:var(--navy);color:#fff;font-size:16px;font-weight:900;cursor:pointer
-}
-.submit-btn:disabled{opacity:.6;cursor:wait}
-.form-status{margin-top:13px;font-weight:800;min-height:24px}
-.payment-badge{display:inline-block;background:var(--pink);color:#fff;border-radius:999px;padding:6px 11px;font-weight:900;font-size:13px}
-.account{background:#f7f8fa;border-radius:16px;padding:20px;margin:18px 0}
-.account small,.account span{display:block;color:#666}
-.account strong{display:block;font-size:27px;margin:5px 0}
-.payment-card ol{padding-left:22px}
-.payment-card li{margin:8px 0}
-.payment-warning{background:#fff5d9;border:1px solid #f1dc9d;padding:13px;border-radius:10px;font-weight:800}
-@media(max-width:800px){.order-grid{grid-template-columns:1fr}}
 
-
-.printing-notice{
-  margin-top:12px;
-  padding:12px 14px;
+input,
+select,
+textarea{
+  display:block;
+  width:100%;
+  margin-top:7px;
+  padding:13px 14px;
+  border:1px solid #d8dbe2;
   border-radius:10px;
-  background:#fff7ed;
-  border:1px solid #fed7aa;
+  background:#fff;
+  font:inherit;
+  color:var(--text);
+  outline:none;
 }
+
+input:focus,
+select:focus,
+textarea:focus{
+  border-color:var(--pink);
+  box-shadow:0 0 0 3px rgba(255,159,163,.16);
+}
+
+.printing-fields{
+  padding:4px 15px 10px;
+  border-radius:12px;
+  background:#fff6f6;
+}
+
+.submit-btn{
+  width:100%;
+  border:0;
+  border-radius:12px;
+  padding:15px;
+  background:var(--navy);
+  color:#fff;
+  font-size:16px;
+  font-weight:900;
+  cursor:pointer;
+}
+
+.submit-btn:disabled{
+  opacity:.6;
+  cursor:wait;
+}
+
+.form-status{
+  margin-top:13px;
+  font-weight:800;
+  min-height:24px;
+}
+
+.payment-badge{
+  display:inline-block;
+  background:var(--pink);
+  color:#fff;
+  border-radius:999px;
+  padding:6px 11px;
+  font-weight:900;
+  font-size:13px;
+}
+
+.account{
+  background:#f7f8fa;
+  border-radius:16px;
+  padding:20px;
+  margin:18px 0;
+}
+
+.account small,
+.account span{
+  display:block;
+  color:#666;
+}
+
+.account strong{
+  display:block;
+  font-size:27px;
+  margin:5px 0;
+}
+
+.payment-card ol{
+  padding-left:22px;
+}
+
+.payment-card li{margin:8px 0}
+
+.payment-warning{
+  background:#fff5d9;
+  border:1px solid #f1dc9d;
+  padding:13px;
+  border-radius:10px;
+  font-weight:800;
+}
+
 .required-mark{
   color:#d33;
   font-size:13px;
   font-weight:700;
 }
+
+@media(max-width:800px){
+  .navlinks{display:none}
+
+  .hero{padding:45px 0}
+
+  .hero-grid,
+  .info-grid{
+    grid-template-columns:1fr;
+  }
+
+  .options,
+  .steps{
+    grid-template-columns:1fr;
+  }
+
+  section{padding:52px 0}
+
+  h2{font-size:29px}
+
+  .price strong{font-size:40px}
+
+  th,td{
+    font-size:13px;
+    padding:11px 6px;
+  }
+
+  .order-grid{
+    grid-template-columns:1fr;
+  }
+}
 </style>
 </head>
+
 <body>
 
 <header>
   <div class="container nav">
     <div class="logo">일산양일중 3학년 15반 반티</div>
+
     <nav class="navlinks">
       <a href="#product">상품</a>
       <a href="#options">옵션</a>
@@ -190,134 +522,326 @@ input:focus,select:focus,textarea:focus{border-color:var(--pink);box-shadow:0 0 
 </header>
 
 <main>
+
 <section class="hero" id="product">
   <div class="container hero-grid">
+
     <div>
-      <span class="badge">일산양일중 3학년 15반 · 긴팔만 주문 가능</span>
-      <h1>일산양일중<br>3학년 15반 반티</h1><p style="font-size:22px;font-weight:900;margin:0 0 10px">바르셀로나 #745A</p>
-      <p class="subtitle">반티 구입을 위한 상품·옵션·사이즈 안내 페이지입니다.</p>
+      <span class="badge">
+        일산양일중 3학년 15반 · 긴팔만 주문 가능
+      </span>
+
+      <h1>
+        일산양일중<br>
+        3학년 15반 반티
+      </h1>
+
+      <p style="font-size:22px;font-weight:900;margin:0 0 10px">
+        바르셀로나 #745A
+      </p>
+
+      <p class="subtitle">
+        반티 구입을 위한 상품·옵션·사이즈 안내 페이지입니다.
+      </p>
+
       <div class="price">
         <del>24,000원</del>
         <strong>12,000원</strong>
       </div>
-      <div class="notice">이 페이지는 사이즈, 옵션 선택을 위한 사이트입니다. 주문서 작성 후, 계좌송금을 하면 신청이 완료됩니다.</div>
+
+      <div class="notice">
+        이 페이지는 사이즈, 옵션 선택을 위한 사이트입니다.
+        주문서 작성 후, 계좌송금을 하면 신청이 완료됩니다.
+      </div>
+
       <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:22px">
-        <a class="btn btn-primary" href="#order">주문 방법 보기</a>
-        <a class="btn btn-outline" href="https://soccer-time.co.kr/amall/?numid=3507&mode=detailview" target="_blank" rel="noopener">원본 상품 페이지 ↗</a>
+        <a class="btn btn-primary" href="#order">
+          주문 방법 보기
+        </a>
+
+        <a
+          class="btn btn-outline"
+          href="https://soccer-time.co.kr/amall/?numid=3507&mode=detailview"
+          target="_blank"
+          rel="noopener"
+        >
+          원본 상품 페이지 ↗
+        </a>
       </div>
     </div>
+
     <div class="hero-card">
-      <img src="product.png" alt="바르셀로나 745A 반티 상품 이미지">
+      <img
+        src="product.png"
+        alt="바르셀로나 745A 반티 상품 이미지"
+      >
     </div>
+
   </div>
 </section>
+
 
 <section id="options">
   <div class="container">
+
     <div class="section-head">
       <div class="eyebrow">OPTION</div>
+
       <h2>추가 옵션 안내</h2>
-      <p class="section-desc">긴팔 상의를 기본으로 필요한 옵션을 선택합니다.</p>
+
+      <p class="section-desc">
+        긴팔 상의를 기본으로 필요한 옵션을 선택합니다.
+      </p>
     </div>
+
     <div class="options">
+
       <article class="option">
         <div class="num">OPTION 01</div>
+
         <h3>하의 선택</h3>
+
         <div class="plus">+5,000원</div>
-        <p>상의와 하의 사이즈를 다르게 선택할 수 있습니다.</p>
+
+        <p>
+          상의와 하의 사이즈를 다르게 선택할 수 있습니다.
+        </p>
       </article>
+
+
       <article class="option">
         <div class="num">OPTION 02</div>
+
         <h3>개인별명</h3>
+
         <div class="plus">+2,000원</div>
-        <p>한글, 한자, 영문 등 원하는 개인별명을 입력할 수 있습니다.</p>
+
+        <p>
+          유니폼에 넣는 <strong>이름·별명 등의 문자</strong>입니다.
+          한글, 한자, 영문 등으로 입력할 수 있습니다.
+        </p>
       </article>
+
+
       <article class="option">
         <div class="num">OPTION 03</div>
+
         <h3>개인번호</h3>
+
         <div class="plus">+3,000원</div>
-        <p>바지를 구매하지 않아도 개인번호 가격은 동일합니다.</p>
+
+        <p>
+          유니폼에 넣는 <strong>숫자 형태의 등번호</strong>입니다.
+          예: 7, 15, 23
+        </p>
       </article>
+
     </div>
+
     <div class="visual">
-      <img src="options.png" alt="하의 선택, 개인별명, 개인번호 옵션 안내 이미지">
+      <img
+        src="options.png"
+        alt="하의 선택, 개인별명, 개인번호 옵션 안내 이미지"
+      >
     </div>
+
   </div>
 </section>
+
 
 <section id="size">
   <div class="container">
+
     <div class="section-head">
       <div class="eyebrow">SIZE GUIDE</div>
+
       <h2>긴팔 상의 사이즈 안내</h2>
-      <p class="section-desc">반팔 사이즈 정보는 제외하고 긴팔 주문에 필요한 정보만 안내합니다.</p>
+
+      <p class="section-desc">
+        반팔 사이즈 정보는 제외하고 긴팔 주문에 필요한 정보만 안내합니다.
+      </p>
     </div>
+
     <div class="size-wrap">
+
       <table>
         <thead>
-          <tr><th>사이즈</th><th>소매길이 (긴팔)</th><th>가슴단면</th><th>총길이</th></tr>
+          <tr>
+            <th>사이즈</th>
+            <th>소매길이 (긴팔)</th>
+            <th>가슴단면</th>
+            <th>총길이</th>
+          </tr>
         </thead>
+
         <tbody>
-          <tr><td class="highlight">S (85)</td><td>70 cm</td><td>46 cm</td><td>67 cm</td></tr>
-          <tr><td class="highlight">M (90)</td><td>72 cm</td><td>48 cm</td><td>68 cm</td></tr>
-          <tr><td class="highlight">L (95)</td><td>74 cm</td><td>50 cm</td><td>70 cm</td></tr>
-          <tr><td class="highlight">XL (100)</td><td>76 cm</td><td>52 cm</td><td>71.5 cm</td></tr>
-          <tr><td class="highlight">2XL (105)</td><td>78 cm</td><td>54.5 cm</td><td>73.5 cm</td></tr>
-          <tr><td class="highlight">3XL (110)</td><td>80 cm</td><td>56 cm</td><td>75.5 cm</td></tr>
-          <tr><td class="highlight">4XL (115)</td><td>82 cm</td><td>58 cm</td><td>77.5 cm</td></tr>
+          <tr>
+            <td class="highlight">S (85)</td>
+            <td>70 cm</td>
+            <td>46 cm</td>
+            <td>67 cm</td>
+          </tr>
+
+          <tr>
+            <td class="highlight">M (90)</td>
+            <td>72 cm</td>
+            <td>48 cm</td>
+            <td>68 cm</td>
+          </tr>
+
+          <tr>
+            <td class="highlight">L (95)</td>
+            <td>74 cm</td>
+            <td>50 cm</td>
+            <td>70 cm</td>
+          </tr>
+
+          <tr>
+            <td class="highlight">XL (100)</td>
+            <td>76 cm</td>
+            <td>52 cm</td>
+            <td>71.5 cm</td>
+          </tr>
+
+          <tr>
+            <td class="highlight">2XL (105)</td>
+            <td>78 cm</td>
+            <td>54.5 cm</td>
+            <td>73.5 cm</td>
+          </tr>
+
+          <tr>
+            <td class="highlight">3XL (110)</td>
+            <td>80 cm</td>
+            <td>56 cm</td>
+            <td>75.5 cm</td>
+          </tr>
+
+          <tr>
+            <td class="highlight">4XL (115)</td>
+            <td>82 cm</td>
+            <td>58 cm</td>
+            <td>77.5 cm</td>
+          </tr>
         </tbody>
       </table>
+
     </div>
+
     <div class="note-box">
       <strong>📏 사이즈 측정 안내</strong><br>
-      소매길이: 소매 부분의 길이 · 가슴단면: 가슴 부분의 가로 길이 · 총길이: 상의의 세로 길이
+      소매길이: 소매 부분의 길이 ·
+      가슴단면: 가슴 부분의 가로 길이 ·
+      총길이: 상의의 세로 길이
     </div>
+
     <div class="visual">
-      <img src="size-guide.webp" alt="원본 사이즈 안내 이미지">
+      <img
+        src="size-guide.webp"
+        alt="원본 사이즈 안내 이미지"
+      >
     </div>
+
   </div>
 </section>
 
+
 <section id="order">
+
   <div class="container">
+
     <div class="section-head">
+
       <div class="eyebrow">ORDER</div>
+
       <h2>주문서 작성 → 입금</h2>
-      <p class="section-desc">반드시 <strong>주문서를 먼저 제출한 후</strong> 입금해주세요.</p>
+
+      <p class="section-desc">
+        반드시 <strong>주문서를 먼저 제출한 후</strong> 입금해주세요.
+      </p>
+
     </div>
+
 
     <div class="steps">
+
       <article class="step">
         <div class="step-num">1</div>
+
         <h3>사이즈·프린팅 선택</h3>
-        <p>본인의 긴팔 사이즈와 프린팅 여부를 확인합니다.</p>
+
+        <p>
+          본인의 긴팔 사이즈와 프린팅 여부를 확인합니다.
+        </p>
       </article>
+
+
       <article class="step">
         <div class="step-num">2</div>
+
         <h3>주문서 제출</h3>
-        <p>아래 주문서를 먼저 작성하고 제출합니다. 제출 내용은 반티 관리용 구글 스프레드시트로 전달됩니다.</p>
+
+        <p>
+          아래 주문서를 먼저 작성하고 제출합니다.
+          제출 내용은 반티 관리용 구글 스프레드시트로 전달됩니다.
+        </p>
       </article>
+
+
       <article class="step">
         <div class="step-num">3</div>
+
         <h3>입금</h3>
-        <p>주문서 제출이 완료된 것을 확인한 뒤 안내된 계좌로 입금합니다.</p>
+
+        <p>
+          주문서 제출이 완료된 것을 확인한 뒤
+          안내된 계좌로 입금합니다.
+        </p>
       </article>
+
     </div>
 
+
     <div class="order-grid">
+
       <div class="form-card">
+
         <h3>📝 반티 주문서</h3>
-        <p class="form-help">※ 주문서를 먼저 제출한 뒤 입금해주세요.</p>
+
+        <p class="form-help">
+          ※ 주문서를 먼저 제출한 뒤 입금해주세요.
+        </p>
+
+
         <form id="orderForm">
-          <label>이름 <span>*</span>
-            <input name="name" type="text" placeholder="예: 김태형" required>
+
+          <label>
+            이름 <span>*</span>
+
+            <input
+              name="name"
+              type="text"
+              placeholder="예: 김태형"
+              required
+            >
           </label>
 
-          <label>연락처 <span>*</span>
-            <input name="phone" type="tel" placeholder="예: 010-0000-0000" required>
+
+          <label>
+            연락처 <span>*</span>
+
+            <input
+              name="phone"
+              type="tel"
+              placeholder="예: 010-0000-0000"
+              required
+            >
           </label>
 
-          <label>긴팔 상의 사이즈 <span>*</span>
+
+          <label>
+            긴팔 상의 사이즈 <span>*</span>
+
             <select name="size" required>
               <option value="">사이즈 선택</option>
               <option>S (85)</option>
@@ -330,7 +854,10 @@ input:focus,select:focus,textarea:focus{border-color:var(--pink);box-shadow:0 0 
             </select>
           </label>
 
-          <label>프린팅 여부 <span>*</span>
+
+          <label>
+            프린팅 여부 <span>*</span>
+
             <select name="printing" id="printing" required>
               <option value="">선택해주세요</option>
               <option value="없음">없음</option>
@@ -338,162 +865,403 @@ input:focus,select:focus,textarea:focus{border-color:var(--pink);box-shadow:0 0 
             </select>
           </label>
 
-          <div id="printingFields" class="printing-fields" hidden>
-            <label>개인별명
-              <input name="nickname" type="text" placeholder="한글 / 한자 / 영문">
+
+          <div
+            id="printingFields"
+            class="printing-fields"
+            hidden
+          >
+
+            <label>
+              개인별명
+
+              <input
+                name="nickname"
+                type="text"
+                placeholder="이름 또는 별명 (예: 태형, TAEHYUNG)"
+              >
             </label>
-            <label>개인번호
-              <input name="number" type="text" placeholder="예: 15">
+
+
+            <label>
+              개인번호
+
+              <input
+                name="number"
+                type="text"
+                inputmode="numeric"
+                placeholder="숫자 등번호 (예: 15)"
+              >
             </label>
-            <p class="form-help">개인별명 +2,000원 / 개인번호 +3,000원</p>
-            <div class="printing-notice">
-              <strong>프린팅을 선택한 경우</strong><br>
-              아래 요청사항에 <b>프린트하고 싶은 문구를 반드시 입력해주세요.</b>
-            </div>
+
+
+            <p class="form-help">
+              개인별명 +2,000원 / 개인번호 +3,000원
+            </p>
+
           </div>
 
-          <label>하의 선택
+
+          <label>
+            하의 선택
+
             <select name="pants">
-              <option value="구매하지 않음">구매하지 않음</option>
-              <option value="구매함 (+5,000원)">구매함 (+5,000원)</option>
+              <option value="구매하지 않음">
+                구매하지 않음
+              </option>
+
+              <option value="구매함 (+5,000원)">
+                구매함 (+5,000원)
+              </option>
             </select>
           </label>
 
-          <label>요청사항 <span id="memoRequiredMark" class="required-mark" hidden>* 프린팅 문구 필수</span>
-            <textarea name="memo" id="memo" rows="3" placeholder="프린팅을 선택했다면 원하는 프린트 문구를 반드시 적어주세요."></textarea>
+
+          <label>
+            요청사항
+
+            <textarea
+              name="memo"
+              id="memo"
+              rows="3"
+              placeholder="기타 요청사항이 있다면 입력해주세요."
+            ></textarea>
           </label>
 
-          <button class="submit-btn" type="submit">주문서 제출하기</button>
-          <div id="formStatus" class="form-status" aria-live="polite"></div>
+
+          <button
+            class="submit-btn"
+            type="submit"
+          >
+            주문서 제출하기
+          </button>
+
+
+          <div
+            id="formStatus"
+            class="form-status"
+            aria-live="polite"
+          ></div>
+
         </form>
+
       </div>
+
 
       <div>
+
         <div class="payment-card">
-          <div class="payment-badge">입금 안내</div>
-          <h3>주문서를 먼저 제출해주세요.</h3>
-          <p>주문서 제출 후 아래 계좌로 입금합니다.</p>
-          <div class="account">
-            <small>농협은행</small>
-            <strong>302-2091-0459-71</strong>
-            <span>예금주: 김태형</span>
+
+          <div class="payment-badge">
+            입금 안내
           </div>
+
+          <h3>
+            주문서를 먼저 제출해주세요.
+          </h3>
+
+          <p>
+            주문서 제출 후 아래 계좌로 입금합니다.
+          </p>
+
+
+          <div class="account">
+
+            <small>농협은행</small>
+
+            <strong>
+              302-2091-0459-71
+            </strong>
+
+            <span>
+              예금주: 김태형
+            </span>
+
+          </div>
+
 
           <div class="payment-warning">
-          ⚠️ <strong>입금자명 안내</strong><br>
-          입금하실 때 반드시 <strong>번호 + 이름</strong> 형식으로 보내주세요.<br>
-          예: <strong>9김태형</strong>
+            ⚠️ <strong>입금자명 안내</strong><br>
+            입금하실 때 반드시
+            <strong>번호 + 이름</strong>
+            형식으로 보내주세요.<br>
+            예: <strong>15김태형</strong>
           </div>
-          
+
+
           <ol>
-            <li><strong>주문서 작성</strong></li>
-            <li><strong>주문서 제출 완료 확인</strong></li>
-            <li><strong>위 계좌로 입금</strong></li>
+
+            <li>
+              <strong>주문서 작성</strong>
+            </li>
+
+            <li>
+              <strong>주문서 제출 완료 확인</strong>
+            </li>
+
+            <li>
+              <strong>입금자명을 번호+이름 형식으로 입력하여 입금</strong>
+            </li>
+
           </ol>
-          <div class="payment-warning">⚠️ 주문서를 제출하지 않고 먼저 입금하지 마세요.</div>
+
+
+          <div class="payment-warning">
+            ⚠️ 주문서를 제출하지 않고 먼저 입금하지 마세요.
+          </div>
+
         </div>
 
-        <div class="info" style="margin-top:20px">
+
+        <div
+          class="info"
+          style="margin-top:20px"
+        >
+
           <h3>⚠️ 꼭 확인해주세요</h3>
+
           <ul>
-            <li>단체할인가는 <strong>10벌 이상</strong>부터 적용됩니다.</li>
-            <li>측정 방법에 따라 <strong>2~3cm 정도 차이</strong>가 날 수 있습니다.</li>
-            <li>남녀공용 사이즈이며 평소 입는 브랜드와 차이가 날 수 있습니다.</li>
-            <li>인쇄상품은 교환 및 환불이 어려울 수 있으므로 신중하게 선택하세요.</li>
+
+            <li>
+              단체할인가는
+              <strong>10벌 이상</strong>
+              부터 적용됩니다.
+            </li>
+
+            <li>
+              측정 방법에 따라
+              <strong>2~3cm 정도 차이</strong>
+              가 날 수 있습니다.
+            </li>
+
+            <li>
+              남녀공용 사이즈이며
+              평소 입는 브랜드와 차이가 날 수 있습니다.
+            </li>
+
+            <li>
+              인쇄상품은 교환 및 환불이 어려울 수 있으므로
+              신중하게 선택하세요.
+            </li>
+
           </ul>
+
         </div>
+
       </div>
+
     </div>
+
   </div>
+
 </section>
+
 
 <section>
+
   <div class="container">
+
     <div class="caution">
+
       <strong>원본 판매처 참고</strong>
-      <p style="margin-bottom:0">상품의 실제 주문·재고·세부 옵션은 원본 판매처의 최신 정보를 기준으로 확인해주세요.</p>
-      <p style="margin:12px 0 0"><a class="btn btn-primary" href="https://soccer-time.co.kr/amall/?numid=3507&mode=detailview" target="_blank" rel="noopener">싸커타임 원본 상품 페이지 확인 ↗</a></p>
+
+      <p style="margin-bottom:0">
+        상품의 실제 주문·재고·세부 옵션은
+        원본 판매처의 최신 정보를 기준으로 확인해주세요.
+      </p>
+
+      <p style="margin:12px 0 0">
+
+        <a
+          class="btn btn-primary"
+          href="https://soccer-time.co.kr/amall/?numid=3507&mode=detailview"
+          target="_blank"
+          rel="noopener"
+        >
+          싸커타임 원본 상품 페이지 확인 ↗
+        </a>
+
+      </p>
+
     </div>
+
   </div>
+
 </section>
+
 </main>
 
+
 <footer>
+
   <div class="container footer-row">
+
     <div>
-      <strong>일산양일중 3학년 15반 반티 사이트</strong><br>
+
+      <strong>
+        일산양일중 3학년 15반 반티 사이트
+      </strong>
+
+      <br>
+
       바르셀로나 #745A · 긴팔 주문 안내
+
     </div>
+
+
     <div>
-      본 사이트는 결제 기능이 없는 안내용 페이지입니다.<br>
-      <strong>문의사항</strong> · 주문 및 사이트 관련 문의:
-      <a href="mailto:totokim2727@naver.com">totokim2727@naver.com</a>
+
+      본 사이트는 결제 기능이 없는 안내용 페이지입니다.
+      <br>
+
+      <strong>문의사항</strong>
+      · 주문 및 사이트 관련 문의:
+
+      <a href="mailto:totokim2727@naver.com">
+        totokim2727@naver.com
+      </a>
+
     </div>
+
   </div>
+
 </footer>
 
-<script>
-const GOOGLE_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxOFnwgGfmLRv5eR21LF9TIlus8qdtGtNeyQVKmkHCyyMDpAOl8vo_f_ziV_lpL1Bm9/exec";
 
-const form = document.getElementById("orderForm");
-const printing = document.getElementById("printing");
-const printingFields = document.getElementById("printingFields");
-const memo = document.getElementById("memo");
-const memoRequiredMark = document.getElementById("memoRequiredMark");
+<script>
+
+const GOOGLE_APPS_SCRIPT_URL =
+  "https://script.google.com/macros/s/AKfycbxOFnwgGfmLRv5eR21LF9TIlus8qdtGtNeyQVKmkHCyyMDpAOl8vo_f_ziV_lpL1Bm9/exec";
+
+
+const form =
+  document.getElementById("orderForm");
+
+const printing =
+  document.getElementById("printing");
+
+const printingFields =
+  document.getElementById("printingFields");
+
+
+/*
+  프린팅 여부에 따라
+  개인별명 / 개인번호 입력란만 표시합니다.
+
+  기존의 "프린팅 선택 시 요청사항 필수" 기능은
+  완전히 제거했습니다.
+*/
 
 printing.addEventListener("change", () => {
-  const isPrinting = printing.value === "있음";
-  printingFields.hidden = !isPrinting;
-  memo.required = isPrinting;
-  memoRequiredMark.hidden = !isPrinting;
+
+  const isPrinting =
+    printing.value === "있음";
+
+  printingFields.hidden =
+    !isPrinting;
+
 });
+
 
 form.addEventListener("submit", async (event) => {
+
   event.preventDefault();
 
-  const button = event.target.querySelector("button[type='submit']");
-  const status = document.getElementById("formStatus");
 
-  if (printing.value === "있음" && memo.value.trim() === "") {
-    alert("프린팅을 선택하셨습니다.\n요청사항에 프린트하고 싶은 문구를 반드시 입력해주세요.");
-    memo.focus();
-    return;
-  }
+  const button =
+    event.target.querySelector(
+      "button[type='submit']"
+    );
 
-  const data = Object.fromEntries(new FormData(event.target).entries());
-  data.product = "바르셀로나 #745A";
-  data.submittedAt = new Date().toISOString();
+  const status =
+    document.getElementById("formStatus");
+
+
+  const data =
+    Object.fromEntries(
+      new FormData(event.target).entries()
+    );
+
+
+  data.product =
+    "바르셀로나 #745A";
+
+  data.submittedAt =
+    new Date().toISOString();
+
 
   button.disabled = true;
-  status.textContent = "주문서를 전송하고 있습니다...";
-  status.style.color = "#333";
+
+  status.textContent =
+    "주문서를 전송하고 있습니다...";
+
+  status.style.color =
+    "#333";
+
 
   try {
-    await fetch(GOOGLE_APPS_SCRIPT_URL, {
-      method: "POST",
-      mode: "no-cors",
-      headers: {"Content-Type": "text/plain;charset=utf-8"},
-      body: JSON.stringify(data)
-    });
 
-    status.textContent = "주문서가 제출되었습니다. 이제 입금 안내의 계좌로 입금해주세요.";
-    status.style.color = "#16803c";
+    await fetch(
+      GOOGLE_APPS_SCRIPT_URL,
+      {
+        method:"POST",
+        mode:"no-cors",
+        headers:{
+          "Content-Type":
+            "text/plain;charset=utf-8"
+        },
+        body:JSON.stringify(data)
+      }
+    );
 
-    alert("주문서가 제출되었습니다.\n주문 내용을 확인한 후 안내된 계좌로 입금해주세요.");
+
+    status.textContent =
+      "주문서가 제출되었습니다. 이제 입금 안내의 계좌로 입금해주세요.";
+
+    status.style.color =
+      "#16803c";
+
+
+    alert(
+      "주문서가 제출되었습니다.\n" +
+      "주문 내용을 확인한 후 안내된 계좌로 입금해주세요."
+    );
+
 
     event.target.reset();
-    printingFields.hidden = true;
-    memo.required = false;
-    memoRequiredMark.hidden = true;
-  } catch (error) {
-    status.textContent = "전송에 실패했습니다. 관리자에게 문의해주세요.";
-    status.style.color = "#d33";
-    alert("주문서 제출에 실패했습니다.\n잠시 후 다시 시도하거나 문의사항의 이메일로 문의해주세요.");
+
+    printingFields.hidden =
+      true;
+
+
+  } catch(error) {
+
+    status.textContent =
+      "전송에 실패했습니다. 관리자에게 문의해주세요.";
+
+    status.style.color =
+      "#d33";
+
+
+    alert(
+      "주문서 제출에 실패했습니다.\n" +
+      "잠시 후 다시 시도하거나 문의사항의 이메일로 문의해주세요."
+    );
+
+
     console.error(error);
+
   } finally {
-    button.disabled = false;
+
+    button.disabled =
+      false;
+
   }
+
 });
+
 </script>
+
 </body>
 </html>
+```
