@@ -900,29 +900,50 @@ textarea:focus{
 
               <input
                 name="nickname"
-                type="text"
-                placeholder="이름 또는 별명 (예: 태형, TAEHYUNG)"
-              >
-            </label>
+                <div
+  id="printingFields"
+  class="printing-fields"
+>
+
+  <label>
+    개인별명
+
+    <input
+      name="nickname"
+      type="text"
+      placeholder="이름 또는 별명 (예: 태형, TAEHYUNG)"
+    >
+  </label>
 
 
-            <label>
-              개인번호
+  <label>
+    개인번호
 
-              <input
-                name="number"
-                type="text"
-                inputmode="numeric"
-                placeholder="숫자 등번호 (예: 15)"
-              >
-            </label>
+    <input
+      name="number"
+      type="text"
+      inputmode="numeric"
+      placeholder="숫자 등번호 (예: 15)"
+    >
+  </label>
 
 
-            <p class="form-help">
-              개인별명 +2,000원 / 개인번호 +3,000원
-            </p>
+  <label>
+    프린팅 문구
 
-          </div>
+    <input
+      name="printingText"
+      type="text"
+      placeholder="프린팅할 문구를 입력해주세요."
+    >
+  </label>
+
+
+  <p class="form-help">
+    개인별명 +2,000원 / 개인번호 +3,000원
+  </p>
+
+</div>
 
 
           <label>
